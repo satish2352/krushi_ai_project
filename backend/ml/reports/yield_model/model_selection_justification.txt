@@ -1,0 +1,24 @@
+
+SELECTED MODEL: Gradient Boosting Regressor (Hyperparameter Tuned)
+
+JUSTIFICATION:
+1. R² SCORE   : GBR achieves R²=0.9129 vs Linear Regression's lower baseline.
+                Tree-based boosting captures non-linear yield interactions.
+
+2. ROBUSTNESS : Boosting is robust to feature scale differences (Region, Soil, CropType
+                are categorical → ordinal encoded; GBR handles this naturally).
+
+3. FEATURE IMPORTANCE: GBR provides feature importances — agronomists can see which
+                       factors matter most (Crop type, Irrigation, Rainfall, etc.).
+
+4. vs Linear Regression: Yield is NOT linearly related to input features.
+                          E.g., too much rainfall HURTS yield (flood effect) —
+                          non-linear relationship that GBR captures.
+
+5. vs Random Forest: GBR consistently outperforms RF for tabular regression tasks
+                     by iteratively correcting residuals.
+
+PERFORMANCE:
+  R²   : 0.9129
+  RMSE : 0.5014 tons/ha
+  MAE  : 0.3997 tons/ha

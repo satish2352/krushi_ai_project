@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Lock html + body to exact viewport — prevents page-level scroll */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  @apply bg-gradient-to-br from-slate-50 via-slate-50 to-slate-100 text-slate-900 antialiased;
+}
+
+/* Thin scrollbar for the messages area only */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 9999px;
+}
+
+@keyframes message-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes message-in-user {
+  from { opacity: 0; transform: translateY(4px) translateX(4px); }
+  to   { opacity: 1; transform: translateY(0) translateX(0); }
+}
+
+@keyframes shell-in {
+  from { opacity: 0; transform: translateY(6px) scale(0.99); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes typing {
+  0%   { transform: translateY(0);   opacity: 0.5; }
+  50%  { transform: translateY(-2px); opacity: 1; }
+  100% { transform: translateY(0);   opacity: 0.5; }
+}
+
+.animate-message-in      { animation: message-in 0.18s ease-out both; }
+.animate-message-in-user  { animation: message-in-user 0.2s ease-out both; }
+.animate-shell            { animation: shell-in 0.25s ease-out both; }
+
+.typing-dot {
+  @apply h-2 w-2 rounded-full bg-slate-400;
+  animation: typing 1s ease-in-out infinite;
+}
+.typing-dot-delay-1 { animation-delay: 0.15s; }
+.typing-dot-delay-2 { animation-delay: 0.30s; }

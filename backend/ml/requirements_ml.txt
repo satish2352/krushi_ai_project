@@ -1,0 +1,33 @@
+# Krishi AI – Backend ML Dependencies
+# Python 3.9+ required
+# Install: pip install -r requirements.txt
+
+# ── Core ML & Data Science ──────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.1
+scikit-learn==1.4.1
+joblib==1.3.2
+scipy==1.12.0
+
+# ── Visualization (for EDA scripts) ────────────────────────────
+matplotlib==3.8.3
+seaborn==0.13.2
+
+# ── Optional: XGBoost (install if available) ───────────────────
+# xgboost==2.0.3
+# Uncomment above line and run: pip install xgboost
+
+# ── HTTP Client (for Weather / Geocoding APIs) ─────────────────
+httpx==0.27.0
+tenacity==8.2.3            # Retry with exponential backoff
+cachetools==5.3.3          # In-memory TTL cache
+
+# ── Language Detection (for multilingual chat) ─────────────────
+langdetect==1.0.9
+
+# ── Future: FastAPI backend (do not install yet for DS phase) ──
+# fastapi==0.110.0
+# uvicorn[standard]==0.27.1
+# pydantic==2.6.3
+# sqlalchemy==2.0.28
+# python-multipart==0.0.9

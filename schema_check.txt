@@ -1,0 +1,12 @@
+﻿MARKET COLS: ['state', 'district', 'market', 'commodity', 'variety', 'arrival_date', 'min_price', 'max_price', 'modal_price']
+{'state': 'Andaman and Nicobar', 'district': 'South Andaman', 'market': 'Port Blair', 'commodity': 'Amaranthus', 'variety': 'Amaranthus', 'arrival_date': '4/3/2019', 'min_price': 6000, 'max_price': 8000, 'modal_price': 7000}
+{'state': 'Andaman and Nicobar', 'district': 'South Andaman', 'market': 'Port Blair', 'commodity': 'Banana - Green', 'variety': 'Banana - Green', 'arrival_date': '4/3/2019', 'min_price': 4500, 'max_price': 5500, 'modal_price': 5000}
+
+PEST COLS: ['ID', 'Estimated_Insects_Count', 'Crop_Type', 'Soil_Type', 'Pesticide_Use_Category', 'Number_Doses_Week', 'Number_Weeks_Used', 'Number_Weeks_Quit', 'Season', 'Crop_Damage']
+PEST SHAPE: (88858, 10)
+{'ID': 'F00000001', 'Estimated_Insects_Count': 188, 'Crop_Type': 1, 'Soil_Type': 0, 'Pesticide_Use_Category': 1, 'Number_Doses_Week': 0, 'Number_Weeks_Used': 0.0, 'Number_Weeks_Quit': 0, 'Season': 1, 'Crop_Damage': 0}
+{'ID': 'F00000003', 'Estimated_Insects_Count': 209, 'Crop_Type': 1, 'Soil_Type': 0, 'Pesticide_Use_Category': 1, 'Number_Doses_Week': 0, 'Number_Weeks_Used': 0.0, 'Number_Weeks_Quit': 0, 'Season': 2, 'Crop_Damage': 1}
+
+YIELD COLS: ['Region', 'Soil_Type', 'Crop', 'Rainfall_mm', 'Temperature_Celsius', 'Fertilizer_Used', 'Irrigation_Used', 'Weather_Condition', 'Days_to_Harvest', 'Yield_tons_per_hectare']
+{'Region': 'West', 'Soil_Type': 'Sandy', 'Crop': 'Cotton', 'Rainfall_mm': 897.0772391101236, 'Temperature_Celsius': 27.676966373377603, 'Fertilizer_Used': False, 'Irrigation_Used': True, 'Weather_Condition': 'Cloudy', 'Days_to_Harvest': 122, 'Yield_tons_per_hectare': 6.555816258223593}
+{'Region': 'South', 'Soil_Type': 'Clay', 'Crop': 'Rice', 'Rainfall_mm': 992.6732816189208, 'Temperature_Celsius': 18.02614225436302, 'Fertilizer_Used': True, 'Irrigation_Used': True, 'Weather_Condition': 'Rainy', 'Days_to_Harvest': 140, 'Yield_tons_per_hectare': 8.5273409063236}

@@ -1,0 +1,26 @@
+
+SELECTED MODEL: Random Forest Classifier (Hyperparameter Tuned)
+
+JUSTIFICATION:
+1. ACCURACY   : RF consistently outperforms Logistic Regression on non-linear data.
+                The feature interactions between NPK, pH, rainfall are non-linear.
+
+2. ROBUSTNESS : RF is robust to outliers (due to tree-based splits) without
+                requiring heavy preprocessing beyond basic capping.
+
+3. FEATURE IMPORTANCE: RF provides built-in feature importance ranking — critical
+                for agronomic interpretability (which soil nutrient matters most?).
+
+4. CLASS BALANCE : Using class_weight='balanced' handles the equal class distribution.
+
+5. OVERFITTING : Hyperparameter-tuned max_depth and min_samples prevents overfitting.
+
+6. EXPLAINABILITY : Feature importances can be shown to farmers/agronomists.
+
+vs. Logistic Regression: Assumes linear separability — soil-crop relationships are
+                         clearly non-linear (e.g. rice needs HIGH humidity AND
+                         specific pH range, not just high values of either).
+
+vs. XGBoost:            RF is comparable while being simpler, requiring no special
+                         install, and slightly more explainable. XGBoost is noted
+                         as an upgrade path.

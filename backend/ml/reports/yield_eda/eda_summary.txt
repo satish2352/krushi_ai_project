@@ -1,0 +1,27 @@
+
+EDA SUMMARY – Crop Yield Dataset
+==================================
+Records         : 1000000
+Features        : 9 (excl. target)
+Target          : Yield_tons_per_hectare
+  Min           : -1.148
+  Max           : 9.963
+  Mean          : 4.649
+  Std           : 1.697
+  Skewness      : -0.001
+Missing Values  : 0
+
+FINDINGS:
+- Target is approximately normal.
+- Fertilizer & Irrigation boolean flags have notable impact on yield.
+- Crop type is the most important categorical predictor.
+- Rainfall and Temperature show modest linear correlation with yield.
+
+PREPROCESSING DECISIONS:
+- Encode Region, Soil_Type, Crop, Weather_Condition (OneHotEncoder or OrdinalEncoder).
+- Convert Fertilizer_Used, Irrigation_Used to int.
+- StandardScaler on numeric features.
+- 80/20 train/test split (random, not stratified for regression).
+- Target transformation optional.
+
+RECOMMENDED MODEL: Gradient Boosting Regressor (handles mixed types, non-linearity).

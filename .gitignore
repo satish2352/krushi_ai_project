@@ -9,16 +9,19 @@ __pycache__/
 
 # ML models
 *.pkl
-models/
+backend/ml/models/
+backend/.venv/
 
 # Environment files — NEVER push these (contains API keys)
 .env
 .env.local
 backend/api/.env
+*.csv
+backend\ml\reports\
 
 # Next.js
 .next/
-node_modules/
+frontend/node_modules/
 npm-debug.log*
 
 # OS
