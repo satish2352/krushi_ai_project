@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+.venv/
+*.pkl
+*.egg-info/
+
+# ML models
+*.pkl
+models/
+
+# Environment files — NEVER push these (contains API keys)
+.env
+.env.local
+backend/api/.env
+
+# Next.js
+.next/
+node_modules/
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/settings.json
