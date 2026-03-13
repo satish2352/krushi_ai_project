@@ -101,11 +101,11 @@ cd krushi\_ai\_project
 ```bash
 cd backend
 
-# Create \& activate virtual environment
+# Create & activate virtual environment
 python -m venv .venv
 
 # Windows:
-.venv\\Scripts\\activate
+.venv\Scripts\activate
 # Mac/Linux:
 source .venv/bin/activate
 
@@ -182,8 +182,9 @@ Allow **GPS/location permission** when prompted — it powers crop recommendatio
 
 ## 👥 Contributors
 
-Vinayak Chavan
-Satish — GitHub
+**Vinayak Chavan** — [GitHub](https://github.com/vinayaksbchavan)
+
+**Satish** — [GitHub](https://github.com/satish2352)
 
 
 📄 License
