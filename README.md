@@ -186,7 +186,3 @@ Allow **GPS/location permission** when prompted — it powers crop recommendatio
 
 **Satish** — [GitHub](https://github.com/satish2352)
 
-
-📄 License
-Developed for academic / competition purposes.
-
